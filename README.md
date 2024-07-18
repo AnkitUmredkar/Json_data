@@ -1,16 +1,20 @@
-# json_data
+<h1 align="center"> 🔶🔸1.1 Switch Dark Theme to Light Theme🔸🔶 </h1>
 
-A new Flutter project.
 
-## Getting Started
+<div align="center">
+  <img height="550" src="https://github.com/user-attachments/assets/769cfdee-0cd4-4706-a220-a0600fe35c20"/>
+</div>
 
-This project is a starting point for a Flutter application.
+<h1 align="left"> </h1>
 
-A few resources to get you started if this is your first Flutter project:
+<div align="center">
+<video height="550" src="https://github.com/user-attachments/assets/28a422d3-3095-4a6e-a71f-060a357c61a5"/>
+</div>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<h1 align="left"> </h1>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div align = "center">
+<a  href="https://github.com/AnkitUmredkar/Json_data/tree/master/lib/Screen/JSON%20Parsing">-> 📂 Go To Dart File 📂<-</a>
+</div>
+
+<h1 align="left"> </h1>
