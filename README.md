@@ -7,7 +7,7 @@
 - JSON is "self-describing" and easy to understand
 
 ### Example :
-```
+```bash
 {
 "employees": [
     {"firstName":"John", "lastName":"Doe"},
@@ -18,9 +18,8 @@
 ```
 
 ## How to Access Json Data Using Provider :
-### Provider Class
-```
-{
+### Provider Class : 
+```bash
 class JsonProvider extends ChangeNotifier {
   List<JsonModel> photoList = [];
 
@@ -41,8 +40,9 @@ class JsonProvider extends ChangeNotifier {
   }
 }
 ```
+- In This Provider class's jsonParsing() method convert the json data to the String data and after jsonDecode method decode the json data in the List format. The List which contains jsonDecode data it passing into the fromMap Named Constructor which given below and it convert into theList of object. 
 
-### Model Class
+### Model Class : 
 ```
 class JsonModel {
   late int albumId, id;
