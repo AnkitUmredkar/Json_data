@@ -113,4 +113,22 @@ ListView.builder(
 <a  href="https://github.com/AnkitUmredkar/Json_data/tree/master/lib/Screen/JSON%20Parsing">-> 📂 Go To Dart File 📂<-</a>
 </div>
 
+<h1 align="center"> 🔶🔸1.8 Json Data In Nested Map Format 🔸🔶 </h1>
+
+<div align="center">
+  <img height="550" src="https://github.com/user-attachments/assets/ba20c430-f1e3-4441-ac04-ee60e4f7d1fa"/>
+</div>
+
+<h1 align="left"> </h1>
+
+<div align="center">
+<video height="550" src="https://github.com/user-attachments/assets/6327a963-b918-4560-bae8-3adbb0bd72eb"/>
+</div>
+
+<h1 align="left"> </h1>
+
+<div align = "center">
+<a  href="https://github.com/AnkitUmredkar/Json_data/tree/master/lib/Screen/UserData">-> 📂 Go To Dart File 📂<-</a>
+</div>
+
 <h1 align="left"> </h1>
