@@ -230,7 +230,7 @@ class Company {
 }
 ```
 
-- Here the example of Nested List fromat of json data.
+- Here the example of Nested List fromat in json data.
 
 <h1 align="left"> </h1>
 
