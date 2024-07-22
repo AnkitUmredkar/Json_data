@@ -114,7 +114,7 @@ ListView.builder(
 </div>
 <h1 align="left"> </h1>
 
-<h1 align="center"> 🔶🔸8.1 Json Data In Nested Map Format 🔸🔶 </h1>
+<h1 align="center"> 🔶🔸8.2 Json Data In Nested Map Format 🔸🔶 </h1>
 
 ## Model Class : 
 ```bash
@@ -184,3 +184,68 @@ class Company {
 </div>
 
 <h1 align="left"> </h1>
+
+<h1 align="center"> 🔶🔸8.3 Json Data In Nested List Format 🔸🔶 </h1>
+
+## Model Class : 
+```bash
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "His mother had always taught him",
+      "body": "His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
+      "tags": [
+        "history",
+        "american",
+        "crime"
+      ],
+      "reactions": {
+        "likes": 192,
+        "dislikes": 25
+      },
+      "views": 305,
+      "userId": 121
+    },
+    {
+      "id": 2,
+      "title": "He was an expert but not in a discipline",
+      "body": "He was an expert but not in a discipline that anyone could fully appreciate. He knew how to hold the cone just right so that the soft server ice-cream fell into it at the precise angle to form a perfect cone each and every time. It had taken years to perfect and he could now do it without even putting any thought behind it.",
+      "tags": [
+        "french",
+        "fiction",
+        "english"
+      ],
+      "reactions": {
+        "likes": 859,
+        "dislikes": 32
+      },
+      "views": 4884,
+      "userId": 91
+    },
+  ],
+  "total": 251,
+  "skip": 0,
+  "limit": 30
+}
+```
+
+- Here the example of Nested List fromat of json data.
+
+<h1 align="left"> </h1>
+
+<div align="center">
+  <img height="550" src="https://github.com/user-attachments/assets/1d79828d-5ed0-41dc-b871-1367ac1331c1"/>
+</div>
+
+<h1 align="left">
+
+<div align="center">
+<video height="550" src="https://github.com/user-attachments/assets/86d900b1-dac3-4c70-8a97-b63c263e37fa"/>
+</div>
+
+<h1 align="left"> </h1>
+
+<div align = "center">
+<a  href="https://github.com/AnkitUmredkar/Json_data/tree/master/lib/Screen/UserData">-> 📂 Go To Dart File 📂<-</a>
+</div>
