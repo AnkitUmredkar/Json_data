@@ -187,7 +187,7 @@ class Company {
 
 <h1 align="center"> 🔶🔸8.3 Json Data In Nested List Format 🔸🔶 </h1>
 
-## Model Class : 
+## Example : 
 ```bash
 {
   "posts": [
@@ -247,5 +247,5 @@ class Company {
 <h1 align="left"> </h1>
 
 <div align = "center">
-<a  href="https://github.com/AnkitUmredkar/Json_data/tree/master/lib/Screen/UserData">-> 📂 Go To Dart File 📂<-</a>
+<a  href="https://github.com/AnkitUmredkar/Json_data/tree/master/lib/Screen/PostData">-> 📂 Go To Dart File 📂<-</a>
 </div>
