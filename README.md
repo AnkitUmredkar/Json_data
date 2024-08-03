@@ -204,8 +204,6 @@ class Company {
         "likes": 192,
         "dislikes": 25
       },
-      "views": 305,
-      "userId": 121
     },
     {
       "id": 2,
@@ -220,8 +218,6 @@ class Company {
         "likes": 859,
         "dislikes": 32
       },
-      "views": 4884,
-      "userId": 91
     },
   ],
   "total": 251,
