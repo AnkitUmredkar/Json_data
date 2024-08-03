@@ -116,49 +116,18 @@ ListView.builder(
 
 <h1 align="center"> 🔶🔸8.2 Json Data In Nested Map Format 🔸🔶 </h1>
 
-## Model Class : 
+- ```When dealing with JSON data that contains nested maps, you often need to access deeply nested values. In Flutter, you can parse such JSON data using the jsonDecode function and then traverse the map to retrieve the desired values.```
+
 ```bash
-class UserModelData {
-  late int id;
-  late String name, username, email, phone, website;
-  late Address address;
-  late Company company;
-
-  UserModelData({required this.id, required this.name, required this.username, required this.email, required this.phone, required this.website, required this.address, required this.company});
-
-  factory UserModelData.fromJson(Map m1) {
-    return UserModelData(id: m1['id'], name: m1['name'], username: m1['username'], email: m1['email'], phone: m1['phone'], website: m1['website'], address: Address.fromJson(m1['address']), company: Company.fromJson(m1['company']));
-  }
-}
-
-class Address {
-  late String street, suite, city, zipcode;
-  late Geo geo;
-
-  Address({required this.street, required this.suite, required this.city, required this.zipcode, required this.geo});
-
-  factory Address.fromJson(Map m1) {
-    return Address(street: m1['street'], suite: m1['suite'], city: m1['city'], zipcode: m1['zipcode'], geo: Geo.fromJson(m1['geo']));
-  }
-}
-
-class Geo {
-  late String lat, lng;
-
-  Geo({required this.lat, required this.lng});
-
-  factory Geo.fromJson(Map m1) {
-    return Geo(lat: m1['lat'], lng: m1['lng']);
-  }
-}
-
-class Company {
-  late String name, catchPhrase, bs;
-
-  Company({required this.name, required this.catchPhrase, required this.bs});
-
-  factory Company.fromJson(Map m1) {
-    return Company(name: m1['name'], catchPhrase: m1['catchPhrase'], bs: m1['bs']);
+{
+  "user": {
+    "id": 1,
+    "name": "John Doe",
+    "address": {
+      "street": "123 Main St",
+      "city": "Springfield",
+      "zipcode": "12345"
+    }
   }
 }
 ```
@@ -188,6 +157,9 @@ class Company {
 <h1 align="center"> 🔶🔸8.3 Json Data In Nested List Format 🔸🔶 </h1>
 
 ## Example : 
+
+- ```When dealing with JSON data that contains nested lists, you need to iterate over the lists to access the values. Flutter provides the jsonDecode function to convert the JSON string into a map or list, which you can then travers```
+
 ```bash
 {
   "posts": [
@@ -205,20 +177,7 @@ class Company {
         "dislikes": 25
       },
     },
-    {
-      "id": 2,
-      "title": "He was an expert but not in a discipline",
-      "body": "He was an expert but not in a discipline that anyone could fully appreciate. He knew how to hold the cone just right so that the soft server ice-cream fell into it at the precise angle to form a perfect cone each and every time. It had taken years to perfect and he could now do it without even putting any thought behind it.",
-      "tags": [
-        "french",
-        "fiction",
-        "english"
-      ],
-      "reactions": {
-        "likes": 859,
-        "dislikes": 32
-      },
-    },
+    // Multiple Map add here...
   ],
   "total": 251,
   "skip": 0,
