@@ -132,8 +132,6 @@ ListView.builder(
 }
 ```
 
-- Other process will be same as it is above.
-
 <h1 align="left"> </h1>
 
 <div align="center">
