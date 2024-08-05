@@ -1,10 +1,25 @@
 <h1 align="center"> 🔶🔸8.1 JSON & JSON Parsing🔸🔶 </h1>
 
 ## What is JSON?
+### JSON (A Simple Way to Store and Exchange Data)
 - JSON stands for ```JavaScript Object Notation```
 - ```JSON is a lightweight format for storing and transporting data```
 - JSON is often used when data is sent from a server to a web page
 - JSON is "self-describing" and easy to understand
+
+### Key Features of JSON :
+- **Human-readable :** It's easy for people to read and understand.
+- **Machine-readable :** Computers can easily parse and process JSON data.
+- **Language-independent :** Used by many programming languages like JavaScript, Python, Java, and more.
+- **Lightweight :** Efficient to transmit over networks.
+- **Data structures :** Supports arrays and objects.
+
+### Basic Structure :
+
+JSON data is made up of two primary structures:
+
+1. **Objects:** Unordered collections of key-value pairs.
+2. **Arrays:** Ordered lists of values.
 
 ### Example :
 ```bash
@@ -73,8 +88,6 @@ ListView.builder(
             itemCount: jsonProvider.photoList.length,
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(bottom: 5),
-              child: Card(
-                color: const Color(0xff222428),
                 child: ListTile(
                   leading: Container(
                     width: width * 0.14,
@@ -82,15 +95,11 @@ ListView.builder(
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
-                            image:
-                                NetworkImage(jsonProvider.photoList[index].url),
+                            image:NetworkImage(jsonProvider.photoList[index].url),
                             fit: BoxFit.cover)),
                   ),
                   title: Text(jsonProvider.photoList[index].title),
-                  subtitle: Text(
-                      'id : ${jsonProvider.photoList[index].id.toString()}'),
                 ),
-              ),
             ),
           ),
 ```
