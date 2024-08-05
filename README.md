@@ -21,7 +21,7 @@ JSON data is made up of two primary structures:
 1. **Objects:** Unordered collections of key-value pairs.
 2. **Arrays:** Ordered lists of values.
 
-### Example :
+### Example of a JSON object: :
 ```bash
 {
 "employees": [
@@ -32,76 +32,13 @@ JSON data is made up of two primary structures:
 }
 ```
 
-## How to Access Json Data Using Provider :
-### Provider Class : 
+### Example of a JSON array :
 ```bash
-class JsonProvider extends ChangeNotifier {
-  List<JsonModel> photoList = [];
-
-  Future<List> jsonParsing() async {
-    String json = await rootBundle.loadString('assets/json/photos/photo.json');
-    List photo = jsonDecode(json);
-    return photo;
-  }
-
-  Future<void> fromList() async {
-    List photo = await jsonParsing();
-    photoList = photo.map((e) => JsonModel.fromMap(e)).toList();
-    notifyListeners();
-  }
-
-  JsonProvider() {
-    fromList();
-  }
-}
-```
-- In This Provider class's jsonParsing() method convert the json data to the String data and after jsonDecode method decode the json data in the List format. The List which contains jsonDecode data it passing into the fromMap Named Constructor which given below and it convert into theList of object. 
-
-### Model Class : 
-```
-class JsonModel {
-  late int albumId, id;
-  late String title, url, thumbnailUrl;
-
-  JsonModel({
-    required this.title,
-    required this.albumId,
-    required this.id,
-    required this.thumbnailUrl,
-    required this.url,
-  });
-
-  factory JsonModel.fromMap(Map m1) {
-    return JsonModel(
-        title: m1['title'],
-        albumId: m1['albumId'],
-        id: m1['id'],
-        thumbnailUrl: m1['thumbnailUrl'],
-        url: m1['url']);
-  }
-}
-```
-
-### Show Data on Screen :
-```
-ListView.builder(
-            itemCount: jsonProvider.photoList.length,
-            itemBuilder: (context, index) => Padding(
-              padding: const EdgeInsets.only(bottom: 5),
-                child: ListTile(
-                  leading: Container(
-                    width: width * 0.14,
-                    height: width * 0.14,
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            image:NetworkImage(jsonProvider.photoList[index].url),
-                            fit: BoxFit.cover)),
-                  ),
-                  title: Text(jsonProvider.photoList[index].title),
-                ),
-            ),
-          ),
+[
+  "apple",
+  "banana",
+  "Orange"
+]
 ```
 
 <h1 align="left"> </h1>
